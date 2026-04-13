@@ -1,5 +1,4 @@
 import BlogCard from ".";
-import { Image } from ".";
 import "./blogCard.css";
 
 export type BlogCardProps = {

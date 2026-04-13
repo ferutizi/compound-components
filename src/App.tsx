@@ -6,6 +6,12 @@ import {
   type BlogCardProps,
 } from "./components/blogCard/BlogCard.stories";
 
+import {
+  DefaultManaged,
+  WithoutInfoManaged,
+  InfoManaged,
+} from "./components/blogCardManaged/blogCardManaged.stories";
+
 import { Title } from "./components/blogCard";
 
 const props: BlogCardProps = {
@@ -28,10 +34,20 @@ function App() {
   return (
     <>
       <Title title="Compound Pattern" />
-      <section style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}>
+      <section
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: "2rem",
+        }}
+      >
         <Default props={props} />
         <Info props={props} />
         <WithoutInfo props={props} />
+        <DefaultManaged props={props} />
+        <InfoManaged props={props} />
+        <WithoutInfoManaged props={props} />
       </section>
     </>
   );
