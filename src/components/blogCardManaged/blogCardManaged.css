@@ -1,0 +1,61 @@
+.blog-card {
+  width: 300px;
+  padding: 1rem;
+  background-color: rgb(64, 64, 71);
+  border-radius: 1rem;
+  .img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .label {
+    color: black;
+    background-color: burlywood;
+    width: fit-content;
+    font-weight: 500;
+    min-width: 4rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .date {
+    color: rgb(170, 170, 176);
+    font-size: 0.75rem;
+    margin: 0;
+    width: fit-content;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: start;
+    margin: 0.5rem 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    .description {
+      text-align: left;
+      margin: 0;
+    }
+  }
+  .instructor {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    .instructor-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .instructor-name {
+      color: azure;
+    }
+  }
+}
